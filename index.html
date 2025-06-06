@@ -1,97 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion Gamer</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-        <h1 align="center">BIENVENIDOS</h1>
-        <!--ESTE ES EL MENÚ DE MI PAGINA-->
 
+    <header>
+    <h1>BIENVENIDOS</h1>
     <!--ESTE ES EL ENCABEZADO DE MI PAGINA-->
-    <div style="text-align:center ;">
-        <img src="img/FusionGamerLogo.png" />
-    </div>
-        <nav>
+    <figure>
+        <img src="img/FusionGamerLogo.png" alt="Logo de Fusion Gamer">
+    </figure>
+</header>
+
+
+    <!--ESTE ES EL MENÚ DE MI PAGINA-->
+    <nav>
         <ul>
-            <li align="center">
-                <a href="#ACERCA DE...">SOBRE NOSOTROS</a> |
-                <a href="#PRODUCTOS">PRODUCTOS</a> | 
-                <a href="#CONTACTO">CONTACTO</a>
+            <li>
+                <a href="#acerca">SOBRE NOSOTROS</a> |
+                <a href="#productos">PRODUCTOS</a> |
+                <a href="#contacto">CONTACTO</a>
             </li>
         </ul>
     </nav>
 
-<br>
-    <!--Este es el contenido-->
     <main>
-        <section id="ACERCA DE..." >
-            <h2 align="center">SOBRE NOSOTROS...</h2>
-             <p>Para gamers, por gamers. en Fusion Gamer entendemos tu pasión porque lo compartimos,
-                sumérgete en un universo donde cada clic, cada frame y cada victoria importan.
-                Aquí encontrarás el equipo que no solo te acompaña, sino que te eleva en cada aventura.</p>
+
+        <!-- SECCIÓN ACERCA DE -->
+        <section id="acerca">
+            <h2>SOBRE NOSOTROS...</h2>
+            <p>Para gamers, por gamers. En Fusion Gamer entendemos tu pasión porque la compartimos,
+            sumérgete en un universo donde cada clic, cada frame y cada victoria importan.
+            Aquí encontrarás el equipo que no solo te acompaña, sino que te eleva en cada aventura.</p>
             <p>¡ES HORA DE JUGAR EN SERIO!</p>
-            
-            <div style="text-align:center ;">
-            <img src="img/competitivo.png" alt="imagen gamer" width="300"/>"
-            </div>
-            <hr>
-
-
+            <img src="img/competitivo.png" alt="imagen gamer" width="300">
         </section>
-        <!--ESTA ES MI SECCION DE PRODUCTOS-->
-        <section id="PRODUCTOS">
-            <h2 align="center">PRODUCTOS</h2>
+
+        <hr>
+
+        <!-- SECCIÓN PRODUCTOS -->
+        <section id="productos">
+            <h2>PRODUCTOS</h2>
+
             <article>
-                <h3 >Domina el Juego, Tecla por Tecla</h3>
+                <h3>Domina el Juego, Tecla por Tecla</h3>
                 <p>Descubre los teclados gamer que llevan tu rendimiento al siguiente nivel.
                 Con retroiluminación RGB, respuesta ultra rápida y diseño ergonómico, cada pulsación es una ventaja.</p>
                 <a href="#">Leer más...</a>
-                    <img src="img/teclado.jpg" width="250"/>
+                <img src="img/teclado.jpg" width="250" alt="Teclado gamer">
             </article>
 
             <article>
-                <h3>Apunta. Dispara. Gana. </h3>
+                <h3>Apunta. Dispara. Gana.</h3>
                 <p>Explora nuestra línea de mouses gamer diseñados para precisión letal y velocidad extrema.</p>
                 <a href="#">Leer más...</a>
-                    <img src="img/mouse.jpg" width="250"/>
+                <img src="img/mouse.jpg" width="250" alt="Mouse gamer">
             </article>
 
             <article>
                 <h3>Toma el Control del Juego</h3>
                 <p>Con nuestros gamepads gamer, cada movimiento es más preciso, más cómodo y más brutal.</p>
                 <a href="#">Leer más...</a>
-                    <img src="img/gamepad.jpg" width="250"/>
+                <img src="img/gamepad.jpg" width="250" alt="Gamepad gamer">
             </article>
 
-
         </section>
+
+
+        <section id="marcas">
+            <h2>Trabajamos con marcas reconocidas</h2>
+                <ul>
+                  <li>Logitech</li>
+                  <li>Razer</li>
+                  <li>HyperX</li>
+                  <li>Redragon</li>
+                </ul>
+        </section>
+
         <hr>
-        <!--ESTA ES MI SECCION DE CONTACTO-->
-        <section id="CONTACTO" align="center">
-            <h2 >FORMULARIO DE CONTACTO</h2>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto">
+            <h2>FORMULARIO DE CONTACTO</h2>
             <form action="#" method="post">
                 <div>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre"
-                    name="nombre" required>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
-                <br>
+
                 <div>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email"
-                    name="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <br>
+
                 <div>
-                    <label for="mensaje">Mensaje: </label>
-                    <textarea name="mensaje" id="mensaje" rows="5 required"></textarea>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
         </section>
 
     </main>
-    <footer align="center">
-        <p>&copy; 2025 Todos los derechos reservados | Síguenos en <a href="#">FACEBOOK</a> </p>
+
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados | Síguenos en <a href="#">FACEBOOK</a></p>
     </footer>
+
 </body>
-</html> 
+</html>
